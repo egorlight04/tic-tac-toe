@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Montserrat Alternates";
+    font-weight: 600;
+    src: local("Montserrat Alternates"), url("./fonts/montserrat-alternates-600.ttf");
+}
+
+:root {
+    --primary: #353535;
+    --special: #2692B4;
+    --special-hover: #177A99;
+    --background: #EEFBFF;
+}
+
+.body {
+    margin: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    font-family: "Montserrat Alternates";
+    line-height: 24px;
+    color: var(--primary);
+    background-color: var(--background);
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.grid {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-self: center;
+    grid-template-rows: 64px 64px 64px;
+    grid-template-columns: 64px 64px 64px;
+    list-style-type: none;
+    background-image: url("./images/grid.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.button {
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    color: var(--background);
+    background-color: var(--special);
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--special-hover);
+}
