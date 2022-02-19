@@ -61,14 +61,14 @@
 }
 
 .cell:before {
-    background-image: url("./images/cross.svg");
-}
-
-.cell:after {
     background-image: url("./images/nought.svg");
 }
 
-.cell--cross:before, .cell--nought:after {
+.cell:after {
+    background-image: url("./images/cross.svg");
+}
+
+.cell--nought:before, .cell--cross:after {
     width: 100%;
     height: 100%;
 }
