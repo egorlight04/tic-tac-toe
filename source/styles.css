@@ -33,13 +33,44 @@
     margin: 0;
     padding: 0;
     display: grid;
-    align-self: center;
+    width: 192px;
+    height: 192px;
     grid-template-rows: 64px 64px 64px;
     grid-template-columns: 64px 64px 64px;
     list-style-type: none;
     background-image: url("./images/grid.svg");
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.body__gird {
+    align-self: center;
+}
+
+.cell {
+    position: relative;
+}
+
+.cell:before, .cell:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cell:before {
+    background-image: url("./images/cross.svg");
+}
+
+.cell:after {
+    background-image: url("./images/nought.svg");
+}
+
+.cell--cross:before, .cell--nought:after {
+    width: 100%;
+    height: 100%;
 }
 
 .button {
